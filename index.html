@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zerol Limited - Your IT Partner for SaaS Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">Zerol Limited</div>
+      <button class="mobile-menu-btn">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-background">
+      <div class="overlay"></div>
+      <div class="geometric-shapes">
+        <div class="shape shape-1">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M40,40 L160,40 L160,160 L40,160 Z M60,60 L140,60 L140,140 L60,140 Z M80,80 L120,80 L120,120 L80,120 Z">
+              <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="20s"
+                repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+        <div class="shape shape-2">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100,20 L180,100 L100,180 L20,100 Z M100,40 L160,100 L100,160 L40,100 Z">
+              <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="15s"
+                repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+        <div class="shape shape-3">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20,60 L100,20 L180,60 L180,140 L100,180 L20,140 Z M40,80 L100,50 L160,80 L160,120 L100,150 L40,120 Z">
+              <animateTransform attributeName="transform" type="rotate" from="-30 100 100" to="330 100 100" dur="18s"
+                repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <h1>
+        Tech Innovation with an
+        <span class="text-gradient">African Flair</span>
+      </h1>
+      <p class="hero-description">
+        From SaaS solutions to custom software development and IT consultancy,
+        Zerol Limited is your bridge to smarter, scalable, and future-ready
+        technology.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="cta-button primary">Get Started</a>
+        <a href="#services" class="cta-button secondary">Our Services</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-background">
+      <div class="overlay"></div>
+      <div class="geometric-shapes">
+        <div class="shape shape-4">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40,40 L160,40 L100,160 Z">
+              <animateTransform attributeName="transform" type="rotate" from="0 100 100" to="360 100 100" dur="25s"
+                repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+        <div class="shape shape-5">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,100 A80,80 0 1,0 180,100 A80,80 0 1,0 20,100 Z">
+              <animateTransform attributeName="transform" type="rotate" from="360 100 100" to="0 100 100" dur="20s"
+                repeatCount="indefinite" />
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>Who We Are</h2>
+      <div class="about-text">
+        <p>
+          Zerol Limited is a cutting-edge tech company born from the vibrant
+          cultures of Benin and Ghana. We specialize in SaaS, custom software
+          development, and IT consultancy, delivering innovative solutions
+          that empower businesses to thrive.
+        </p>
+        <p>
+          With our multilingual approach in French and English, we connect
+          diverse markets with tech that's local in insight but global in
+          impact. At Zerol, we don't just create technology – we craft the
+          future, one solution at a time.
+        </p>
+      </div>
+      <div class="about-features">
+        <div class="feature">
+          <div class="feature-icon">📍</div>
+          <h3>Dual Presence</h3>
+          <p>Offices in Cotonou, Benin and Accra, Ghana</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🌍</div>
+          <h3>Multilingual Services</h3>
+          <p>French and English expertise</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">💡</div>
+          <h3>Innovation Team</h3>
+          <p>Dedicated to tailored solutions</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services-header">
+      <h2>Our Expertise</h2>
+      <p class="section-subtitle">
+        Innovative solutions for modern businesses
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">1️⃣</div>
+        <div class="service-content">
+          <h3>SaaS Solutions</h3>
+          <p>
+            Streamline your operations and scale effortlessly with our
+            cloud-based software tools, designed to make your business smarter
+            and more efficient.
+          </p>
+        </div>
+        <div class="service-hover">
+          <ul class="service-features">
+            <li>Cloud-based Solutions</li>
+            <li>Scalable Architecture</li>
+            <li>Business Intelligence</li>
+            <li>Real-time Analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">2️⃣</div>
+        <div class="service-content">
+          <h3>Custom Software Development</h3>
+          <p>
+            Have a bold idea? We'll transform it into software tailored to
+            your exact needs, with creativity and precision at every step.
+          </p>
+        </div>
+        <div class="service-hover">
+          <ul class="service-features">
+            <li>Tailored Solutions</li>
+            <li>Agile Development</li>
+            <li>Quality Assurance</li>
+            <li>Continuous Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">3️⃣</div>
+        <div class="service-content">
+          <h3>IT Consultancy</h3>
+          <p>
+            Navigating the tech world can be tough. Let our experts guide you
+            through digital transformation, optimize your IT systems, and
+            future-proof your business.
+          </p>
+        </div>
+        <div class="service-hover">
+          <ul class="service-features">
+            <li>Strategic Planning</li>
+            <li>System Optimization</li>
+            <li>Security Audits</li>
+            <li>Technology Roadmap</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="services-cta">
+      <a href="#contact" class="cta-button primary">Find the Service That Fits You Best</a>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="contact" id="contact">
+    <div class="contact-header">
+      <h2>Let's Talk Tech</h2>
+      <p class="section-subtitle">
+        Ready to take your business to the next level? We're here to make it
+        happen. Reach out to us today!
+      </p>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="locations">
+          <h3>Our Locations</h3>
+          <div class="location-card">
+            <div class="location-icon">📍</div>
+            <div class="location-details">
+              <h4>Benin</h4>
+              <p>YAGBE LOT 620, Cotonou</p>
+            </div>
+          </div>
+          <div class="location-card">
+            <div class="location-icon">📍</div>
+            <div class="location-details">
+              <h4>Ghana</h4>
+              <p>Radio Gold, Accra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
