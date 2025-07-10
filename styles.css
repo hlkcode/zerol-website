@@ -33,6 +33,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Enhanced Header Styles */
 header {
   background-color: var(--primary-purple);
@@ -102,6 +103,52 @@ nav {
 .nav-links a:hover::after {
   width: 100%;
 }
+/* Navigation bar styling */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown .dropdown-toggle {
+  cursor: pointer;
+}
+
+.nav-links .dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Aligns dropdown below the link */
+  left: 0;
+  background-color: #dc92ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  min-width: 150px;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-links .dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links .dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
 
 /* Enhanced Hero Section */
 .hero {
@@ -120,7 +167,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--primary-purple);
+  background: url('bgimg.png') no-repeat center center;
+  background-size: cover;
+  /*background: var(--primary-purple);*/
   z-index: 1;
 }
 
@@ -132,8 +181,8 @@ nav {
   height: 100%;
   background: radial-gradient(
     circle at 50% 50%,
-    rgba(138, 111, 212, 0.1) 0%,
-    rgba(45, 27, 78, 0.9) 100%
+    rgba(28, 17, 59, 0.459) 0%,
+    rgb(67, 45, 109) 100%
   );
   animation: fadeIn 1s ease-out;
 }
@@ -297,7 +346,7 @@ nav {
 .about .overlay {
   background: radial-gradient(
     circle at 50% 50%,
-    rgba(74, 54, 112, 0.8) 0%,
+    rgba(14, 2, 31, 0.863) 0%,
     var(--primary-purple) 100%
   );
 }
@@ -335,7 +384,8 @@ nav {
 .about-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 20px;
+  
 }
 
 .feature {
@@ -345,6 +395,7 @@ nav {
   border-radius: 12px;
   backdrop-filter: blur(10px);
   transition: transform 0.3s ease, background 0.3s ease;
+  
 }
 
 .feature:hover {
@@ -353,8 +404,11 @@ nav {
 }
 
 .feature-icon {
-  font-size: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .feature h3 {
